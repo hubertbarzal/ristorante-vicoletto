@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Pizzeria Bar Pegaso</title>
+    <!-- Tailwind 4 via the project CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            orange: '#f59e0b',
+            dark: '#0a0a0a',
+            surface: '#171717',
+          }
+        }
+      }
+    }
+  }
+</script>
+<style> 
+    body {
+  background-color: var(--color-brand-dark);
+  color: #e5e5e5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-brand-dark);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-orange);
+}
+</style>
+    <!-- Lucide Icons via CDN for simplicity in vanilla HTML -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-brand-dark text-gray-200 selection:bg-brand-orange/30 custom-scrollbar">
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden border-b border-brand-orange/20">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-orange/10 via-transparent to-transparent"></div>
+        <div class="z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-brand-orange mb-4 tracking-tighter">
+                PEGASO
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-gray-400 uppercase tracking-[0.3em]">
+                Ristorante • Pizzeria • Bar
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+        
+        <!-- Welcome Section -->
+        <section class="py-12 border-b border-white/5">
+            <h2 class="text-2xl font-semibold text-brand-orange mb-8 uppercase tracking-wider">Benvenuto</h2>
+            <div class="max-w-none">
+                <p class="text-lg leading-relaxed text-gray-300 italic">
+                    "Pegaso è una scelta gastronomica popolare per molti viaggiatori che apprezzano la sua atmosfera rilassata e allegra, 
+                    con posti a sedere sia al coperto che all'aperto che forniscono un ambiente spazioso e vivace. 
+                    Il ristorante guadagna recensioni entusiasmi per i suoi prezzi accessibili e l'ottimo rapporto qualità-prezzo, 
+                    soprattutto dato il cibo e il vino di alta qualità. Gli ospiti spesso lodano il servizio cordiale e attento. 
+                    Il variegato menu, con pasta, frutti di mare, insalate e pizza, viene spesso elogiato, invogliando diversi commensali a tornare."
+                </p>
+            </div>
+        </section>
+
+        <!-- Orari Section -->
+        <section class="py-12 border-b border-white/5">
+            <h2 class="text-2xl font-semibold text-brand-orange mb-8 uppercase tracking-wider">Orari di Apertura</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-brand-surface p-6 rounded-xl border border-white/5">
+                    <h3 class="text-brand-orange flex items-center gap-2 mb-4 font-semibold uppercase text-sm tracking-widest">
+                        <i data-lucide="clock" class="w-4 h-4"></i> Bar
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-400">Ogni giorno</span><span>08:00 – 00:00</span></li>
+                    </ul>
+                </div>
+                <div class="bg-brand-surface p-6 rounded-xl border border-white/5">
+                    <h3 class="text-brand-orange flex items-center gap-2 mb-4 font-semibold uppercase text-sm tracking-widest">
+                        <i data-lucide="utensils" class="w-4 h-4"></i> Cucina
+                    </h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-400">Lun - Ven</span><span>12:00 – 15:00 | 18:00 – 23:00</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-400">Sabato</span><span>12:00 – 23:00 (Continuo)</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-400">Domenica</span><span>12:00 – 23:00 (Continuo)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caratteristiche Section -->
+        <section class="py-12 border-b border-white/5">
+            <h2 class="text-2xl font-semibold text-brand-orange mb-8 uppercase tracking-wider">Caratteristiche</h2>
+            
+            <!-- Toggle: Accessibilità -->
+            <div class="toggle-container mb-4 border border-white/10 rounded-lg overflow-hidden bg-brand-surface">
+                <button class="toggle-btn w-full p-4 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="accessibility" class="w-5 h-5 text-brand-orange"></i>
+                        <span class="font-medium text-lg">Accessibilità</span>
+                    </div>
+                    <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform"></i>
+                </button>
+                <div class="toggle-content hidden p-4 bg-black/20 border-t border-white/5">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Ingresso accessibile</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Tavoli accessibili</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Bagno accessibile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Toggle: Servizi -->
+            <div class="toggle-container mb-4 border border-white/10 rounded-lg overflow-hidden bg-brand-surface">
+                <button class="toggle-btn w-full p-4 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="wifi" class="w-5 h-5 text-brand-orange"></i>
+                        <span class="font-medium text-lg">Servizi & Wi-Fi</span>
+                    </div>
+                    <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform"></i>
+                </button>
+                <div class="toggle-content hidden p-4 bg-black/20 border-t border-white/5">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Wi-Fi Gratuito</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Tavoli all'aperto</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Servizio al tavolo/banco</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Toggle: In Evidenza -->
+            <div class="toggle-container mb-4 border border-white/10 rounded-lg overflow-hidden bg-brand-surface">
+                <button class="toggle-btn w-full p-4 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="wine" class="w-5 h-5 text-brand-orange"></i>
+                        <span class="font-medium text-lg">In Evidenza</span>
+                    </div>
+                    <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform"></i>
+                </button>
+                <div class="toggle-content hidden p-4 bg-black/20 border-t border-white/5">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Ottima carta dei vini</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Ottimi dessert</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Ottimo caffè</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-orange"></i> Sport in TV</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menù Section -->
+        <section class="py-12 border-b border-white/5">
+            <h2 class="text-2xl font-semibold text-brand-orange mb-8 uppercase tracking-wider">Il Nostro Menù</h2>
+            
+            <div class="toggle-container mb-4 border border-white/10 rounded-lg overflow-hidden bg-brand-surface">
+                <button class="toggle-btn w-full p-4 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="utensils" class="w-5 h-5 text-brand-orange"></i>
+                        <span class="font-medium text-lg">Pizze</span>
+                    </div>
+                    <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform"></i>
+                </button>
+                <div class="toggle-content hidden p-4 bg-black/20 border-t border-white/5">
+                    <div class="grid gap-4">
+                        <div class="flex justify-between items-center border-b border-white/5 pb-2"><div><h4 class="font-medium">Pizza Margherita</h4><p class="text-sm text-gray-500">Pomodoro, mozzarella, basilico</p></div><span class="text-brand-orange">€ 8.50</span></div>
+                        <div class="flex justify-between items-center border-b border-white/5 pb-2"><div><h4 class="font-medium">Pizza Diavola</h4><p class="text-sm text-gray-500">Pomodoro, mozzarella, salamino piccante</p></div><span class="text-brand-orange">€ 9.50</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-container mb-4 border border-white/10 rounded-lg overflow-hidden bg-brand-surface">
+                <button class="toggle-btn w-full p-4 flex items-center justify-between hover:bg-white/5 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="coffee" class="w-5 h-5 text-brand-orange"></i>
+                        <span class="font-medium text-lg">Dessert</span>
+                    </div>
+                    <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform"></i>
+                </button>
+                <div class="toggle-content hidden p-4 bg-black/20 border-t border-white/5">
+                    <div class="grid gap-4">
+                        <div class="flex justify-between items-center border-b border-white/5 pb-2"><h4 class="font-medium">Tiramisù Artigianale</h4><span class="text-brand-orange">€ 6.00</span></div>
+                        <div class="flex justify-between items-center border-b border-white/5 pb-2"><h4 class="font-medium">Panna Cotta</h4><span class="text-brand-orange">€ 5.00</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contatti Section -->
+        <section class="py-12 border-none">
+            <h2 class="text-2xl font-semibold text-brand-orange mb-8 uppercase tracking-wider">Contatti & Info</h2>
+            <div class="bg-brand-surface p-8 rounded-2xl border border-brand-orange/10 grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-brand-orange shrink-0 mt-1"></i>
+                        <div><h4 class="font-semibold text-white uppercase text-xs tracking-widest mb-1">Indirizzo</h4><p class="text-gray-400">HPG5+HF Garda, Provincia di Verona</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="phone" class="w-6 h-6 text-brand-orange shrink-0 mt-1"></i>
+                        <div><h4 class="font-semibold text-white uppercase text-xs tracking-widest mb-1">Telefono</h4><p class="text-gray-400">349 578 8596</p></div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center gap-4">
+                    <p class="text-sm text-gray-500 italic border-l-2 border-brand-orange pl-4">"Prenotazione cena consigliata. Accettiamo pagamenti NFC, carte di credito e debito."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 text-center text-gray-600 text-sm">
+            <p>© 2026 Ristorante Pizzeria Bar Pegaso. Built with <a href="https://playcode.io/ai-website-builder" class="hover:text-brand-orange underline">Playcode</a></p>
+        </footer>
+    </main>
+
+    <script>
+        // Inizializza le icone Lucide
+        lucide.createIcons();
+
+        // Gestione Toggle (Accordion)
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const container = button.closest('.toggle-container');
+                const content = container.querySelector('.toggle-content');
+                const icon = button.querySelector('.toggle-icon');
+
+                // Toggle classe 'hidden'
+                const isHidden = content.classList.contains('hidden');
+                
+                if (isHidden) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Il Vicoletto - Trattoria di Verona</title>
     <!-- Tailwind 4 import -->
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/global.css" />
     <!-- Lucide Icons via CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+             gold:' #d4af37',
+             light: '#fdfcf8',
+             surface: '#ffffff',
+             dark: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
   </head>
   <body
     class="min-h-screen bg-brand-light text-brand-dark selection:bg-brand-gold/20 custom-scrollbar"
@@ -499,24 +517,7 @@
         </p>
       </footer>
     </main>
-    <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-             gold:' #d4af37',
-             light: '#fdfcf8',
-             surface: '#ffffff',
-             dark: '#1a1a1a',
-            }
-          }
-        }
-      }
-    }
-  </script>
-
+   
     <script>
       // Inizializza le icone
       lucide.createIcons();

@@ -4,28 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Il Vicoletto - Trattoria di Verona</title>
-    <!-- Tailwind 4 import -->
-    <link rel="stylesheet" href="/global.css" />
+    
     <!-- Lucide Icons via CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-     <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-             gold:' #d4af37',
-             light: '#fdfcf8',
-             surface: '#ffffff',
-             dark: '#1a1a1a',
+    
+    <!-- 1. Cdn di Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. Configurazione Colori per Tailwind CDN -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                gold: '#d4af37',
+                light: '#fdfcf8',
+                surface: '#ffffff',
+                dark: '#1a1a1a',
+              }
             }
           }
         }
       }
-    }
-  </script>
+    </script>
 
+    <!-- 3. CSS Personalizzato per Scrollbar e Animazioni dei Menu Toggle -->
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #fdfcf8; /* Sostituito var con colore reale */
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #e5e7eb;
+        border-radius: 10px;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #d4af37; /* Sostituito var con colore reale */
+      }
+
+      /* Animazione fluida per l'apertura dei menu a tendina (Toggle) */
+      .toggle-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease;
+      }
+
+      .toggle-container.active .toggle-content {
+        max-height: 1000px;
+        padding: 1.25rem;
+      }
+
+      .toggle-container.active .toggle-icon {
+        transform: rotate(180deg);
+      }
+
+      .toggle-container.active {
+        border-color: #d4af37; /* Sostituito var con colore reale */
+        box-shadow: 0 4px 20px -5px rgba(212, 175, 55, 0.1);
+      }
+    </style>
   </head>
   <body
     class="min-h-screen bg-brand-light text-brand-dark selection:bg-brand-gold/20 custom-scrollbar"
@@ -79,7 +126,7 @@
           <p class="text-lg leading-relaxed text-brand-dark italic font-serif">
             "Altissimo gradimento per l'eccellente rapporto qualità-prezzo, in
             particolare per la convenienza dei menù fissi a pranzo. I nostri
-            clienti lodano la qualità delle materie prime, la cucina semplice ma
+            clienti lodano la qualità delle materie prime, la cucina simple ma
             curata e l'atmosfera intima, tranquilla e accogliente del locale.
             Anche il personale viene generalmente descritto come molto gentile e
             disponibile, rendendo la trattoria una tappa consigliatissima per
@@ -517,7 +564,7 @@
         </p>
       </footer>
     </main>
-   
+    
     <script>
       // Inizializza le icone
       lucide.createIcons();
@@ -526,12 +573,6 @@
       document.querySelectorAll('.toggle-btn').forEach(button => {
           button.addEventListener('click', () => {
               const container = button.closest('.toggle-container');
-
-              // Opzionale: chiudi gli altri quando ne apri uno
-              // document.querySelectorAll('.toggle-container').forEach(c => {
-              //     if(c !== container) c.classList.remove('active');
-              // });
-
               container.classList.toggle('active');
           });
       });

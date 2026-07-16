@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+body {
+  background-color: var(--color-brand-light);
+  color: var(--color-brand-dark);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-brand-light);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gold);
+}
+
+/* Animazione fluida per l'apertura dei toggle */
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.toggle-container.active .toggle-content {
+    max-height: 1000px;
+    padding: 1.25rem;
+}
+
+.toggle-container.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.toggle-container.active {
+    border-color: var(--color-brand-gold);
+    box-shadow: 0 4px 20px -5px rgba(212, 175, 55, 0.1);
+}

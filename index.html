@@ -1,306 +1,539 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Il Vicoletto - Trattoria di Verona</title>
     <!-- Tailwind 4 import -->
-    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/global.css" />
     <!-- Lucide Icons via CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="min-h-screen bg-brand-light text-brand-dark selection:bg-brand-gold/20 custom-scrollbar">
-
+  </head>
+  <body
+    class="min-h-screen bg-brand-light text-brand-dark selection:bg-brand-gold/20 custom-scrollbar"
+  >
     <!-- Hero Section -->
-    <header class="relative h-[65vh] flex items-center justify-center overflow-hidden border-b border-brand-gold/10">
-        <!-- Immagine di sfondo con overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmPwlg9y2EpFHc8vsEOIAuMgSOjDyvFlIb6FSwAboTk6tuEnN4_PcoHbkRIc1yQA0iu-2FTTYqNmolZtJSj-fgx_Ca18jytsBRHP5dMEUWhxdBRn6I02lOwjAW52I0MH3XEujE=w1000" 
-                 alt="Il Vicoletto" 
-                 class="w-full h-full object-cover opacity-20 grayscale-[20%]">
-            <div class="absolute inset-0 bg-gradient-to-b from-brand-light/40 via-brand-light/80 to-brand-light"></div>
+    <header
+      class="relative h-[65vh] flex items-center justify-center overflow-hidden border-b border-brand-gold/10"
+    >
+      <!-- Immagine di sfondo con overlay -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmPwlg9y2EpFHc8vsEOIAuMgSOjDyvFlIb6FSwAboTk6tuEnN4_PcoHbkRIc1yQA0iu-2FTTYqNmolZtJSj-fgx_Ca18jytsBRHP5dMEUWhxdBRn6I02lOwjAW52I0MH3XEujE=w1000"
+          alt="Il Vicoletto"
+          class="w-full h-full object-cover opacity-20 grayscale-[20%]"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-brand-light/40 via-brand-light/80 to-brand-light"
+        ></div>
+      </div>
+
+      <div class="z-10 text-center px-4">
+        <div
+          class="inline-block mb-6 p-1 px-4 border border-brand-gold/30 rounded-full text-brand-gold text-xs tracking-[0.2em] font-medium uppercase"
+        >
+          Verona
         </div>
-        
-        <div class="z-10 text-center px-4">
-            <div class="inline-block mb-6 p-1 px-4 border border-brand-gold/30 rounded-full text-brand-gold text-xs tracking-[0.2em] font-medium uppercase">
-                Verona
-            </div>
-            <h1 class="text-6xl md:text-8xl font-serif font-bold text-brand-dark mb-4 tracking-tight italic">
-                Il Vicoletto
-            </h1>
-            <p class="text-lg md:text-xl font-light text-brand-gold uppercase tracking-[0.4em]">
-                Trattoria di Verona
-            </p>
-        </div>
+        <h1
+          class="text-6xl md:text-8xl font-serif font-bold text-brand-dark mb-4 tracking-tight italic"
+        >
+          Il Vicoletto
+        </h1>
+        <p
+          class="text-lg md:text-xl font-light text-brand-gold uppercase tracking-[0.4em]"
+        >
+          Trattoria di Verona
+        </p>
+      </div>
     </header>
 
     <main class="max-w-4xl mx-auto px-6 pb-24 -mt-10 relative z-10">
-        
-        <!-- Welcome Section -->
-        <section class="py-16 px-8 bg-brand-surface rounded-3xl shadow-xl shadow-brand-gold/5 border border-brand-gold/10">
-            <h2 class="text-xl font-bold text-brand-gold mb-8 uppercase tracking-widest text-center">Benvenuti nel Cuore di Verona</h2>
-            <div class="max-w-2xl mx-auto text-center">
-                <p class="text-lg leading-relaxed text-brand-dark italic font-serif">
-                    "Altissimo gradimento per l'eccellente rapporto qualità-prezzo, in particolare per la convenienza dei menù fissi a pranzo. 
-                    I nostri clienti lodano la qualità delle materie prime, la cucina semplice ma curata e l'atmosfera intima, 
-                    tranquilla e accogliente del locale. Anche il personale viene generalmente descritto come molto gentile e disponibile, 
-                    rendendo la trattoria una tappa consigliatissima per assaporare piatti autentici a due passi dal centro."
-                </p>
-            </div>
-        </section>
-
-        <!-- Gallery / Visual Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-16">
-            <div class="h-64 rounded-2xl overflow-hidden shadow-lg">
-                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmPwlg9y2EpFHc8vsEOIAuMgSOjDyvFlIb6FSwAboTk6tuEnN4_PcoHbkRIc1yQA0iu-2FTTYqNmolZtJSj-fgx_Ca18jytsBRHP5dMEUWhxdBRn6I02lOwjAW52I0MH3XEujE=w800" class="w-full h-full object-cover" alt="Locale">
-            </div>
-            <div class="h-64 rounded-2xl overflow-hidden shadow-lg bg-brand-gold/5 flex items-center justify-center border border-brand-gold/10 p-8">
-                <p class="text-brand-gold font-serif italic text-xl text-center leading-snug">
-                    Un'atmosfera intima e accogliente nel centro storico veronese.
-                </p>
-            </div>
+      <!-- Welcome Section -->
+      <section
+        class="py-16 px-8 bg-brand-surface rounded-3xl shadow-xl shadow-brand-gold/5 border border-brand-gold/10"
+      >
+        <h2
+          class="text-xl font-bold text-brand-gold mb-8 uppercase tracking-widest text-center"
+        >
+          Benvenuti nel Cuore di Verona
+        </h2>
+        <div class="max-w-2xl mx-auto text-center">
+          <p class="text-lg leading-relaxed text-brand-dark italic font-serif">
+            "Altissimo gradimento per l'eccellente rapporto qualità-prezzo, in
+            particolare per la convenienza dei menù fissi a pranzo. I nostri
+            clienti lodano la qualità delle materie prime, la cucina semplice ma
+            curata e l'atmosfera intima, tranquilla e accogliente del locale.
+            Anche il personale viene generalmente descritto come molto gentile e
+            disponibile, rendendo la trattoria una tappa consigliatissima per
+            assaporare piatti autentici a due passi dal centro."
+          </p>
         </div>
+      </section>
 
-        <!-- Orari Section -->
-        <section class="py-16">
-            <h2 class="text-2xl font-bold text-brand-dark mb-10 uppercase tracking-[0.2em] text-center border-b border-brand-gold/20 pb-4 inline-block mx-auto w-full">Orari di Apertura</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Pranzo -->
-                <div class="bg-brand-surface p-8 rounded-2xl border border-brand-gold/10 shadow-lg">
-                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-brand-gold/10">
-                        <i data-lucide="sun" class="w-6 h-6 text-brand-gold"></i>
-                        <h3 class="text-brand-dark font-bold uppercase text-sm tracking-widest">Pranzo</h3>
-                    </div>
-                    <ul class="space-y-3">
-                        <li class="flex justify-between text-sm">
-                            <span class="text-gray-500">Lun - Mer, Gio - Ven</span>
-                            <span class="font-semibold">12:00 – 14:30</span>
-                        </li>
-                        <li class="flex justify-between text-sm">
-                            <span class="text-gray-500">Sabato - Domenica</span>
-                            <span class="text-brand-gold font-bold">12:00 – 15:00</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Cena -->
-                <div class="bg-brand-surface p-8 rounded-2xl border border-brand-gold/10 shadow-lg">
-                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-brand-gold/10">
-                        <i data-lucide="moon" class="w-6 h-6 text-brand-gold"></i>
-                        <h3 class="text-brand-dark font-bold uppercase text-sm tracking-widest">Cena</h3>
-                    </div>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex justify-between">
-                            <span class="text-gray-500">Lun - Mer, Gio, Dom</span>
-                            <span class="font-semibold">19:00 – 22:30</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span class="text-gray-500">Venerdì - Sabato</span>
-                            <span class="text-brand-gold font-bold">19:00 – 23:00</span>
-                        </li>
-                    </ul>
-                </div>
+      <!-- Gallery / Visual Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-16">
+        <div class="h-64 rounded-2xl overflow-hidden shadow-lg">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmPwlg9y2EpFHc8vsEOIAuMgSOjDyvFlIb6FSwAboTk6tuEnN4_PcoHbkRIc1yQA0iu-2FTTYqNmolZtJSj-fgx_Ca18jytsBRHP5dMEUWhxdBRn6I02lOwjAW52I0MH3XEujE=w800"
+            class="w-full h-full object-cover"
+            alt="Locale"
+          />
+        </div>
+        <div
+          class="h-64 rounded-2xl overflow-hidden shadow-lg bg-brand-gold/5 flex items-center justify-center border border-brand-gold/10 p-8"
+        >
+          <p
+            class="text-brand-gold font-serif italic text-xl text-center leading-snug"
+          >
+            Un'atmosfera intima e accogliente nel centro storico veronese.
+          </p>
+        </div>
+      </div>
+
+      <!-- Orari Section -->
+      <section class="py-16">
+        <h2
+          class="text-2xl font-bold text-brand-dark mb-10 uppercase tracking-[0.2em] text-center border-b border-brand-gold/20 pb-4 inline-block mx-auto w-full"
+        >
+          Orari di Apertura
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Pranzo -->
+          <div
+            class="bg-brand-surface p-8 rounded-2xl border border-brand-gold/10 shadow-lg"
+          >
+            <div
+              class="flex items-center gap-3 mb-6 pb-4 border-b border-brand-gold/10"
+            >
+              <i data-lucide="sun" class="w-6 h-6 text-brand-gold"></i>
+              <h3
+                class="text-brand-dark font-bold uppercase text-sm tracking-widest"
+              >
+                Pranzo
+              </h3>
             </div>
-        </section>
-
-        <!-- Caratteristiche Section (Toggle) -->
-        <section class="py-16">
-            <h2 class="text-2xl font-bold text-brand-dark mb-8 uppercase tracking-[0.2em]">Caratteristiche</h2>
-            
-            <div class="space-y-4">
-                <!-- Accessibilità -->
-                <div class="toggle-container border border-gray-100 rounded-xl bg-brand-surface transition-all">
-                    <button class="toggle-btn w-full p-5 flex items-center justify-between hover:bg-brand-gold/5">
-                        <div class="flex items-center gap-4">
-                            <i data-lucide="accessibility" class="w-5 h-5 text-brand-gold"></i>
-                            <span class="font-medium">Accessibilità</span>
-                        </div>
-                        <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform text-gray-400"></i>
-                    </button>
-                    <div class="toggle-content">
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 p-2 text-sm">
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Ingresso accessibile in sedia a rotelle</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Tavoli accessibili in sedia a rotelle</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Servizio -->
-                <div class="toggle-container border border-gray-100 rounded-xl bg-brand-surface transition-all">
-                    <button class="toggle-btn w-full p-5 flex items-center justify-between hover:bg-brand-gold/5">
-                        <div class="flex items-center gap-4">
-                            <i data-lucide="clover" class="w-5 h-5 text-brand-gold"></i>
-                            <span class="font-medium">Dall'attività</span>
-                        </div>
-                        <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform text-gray-400"></i>
-                    </button>
-                    <div class="toggle-content">
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 p-2 text-sm">
-                            <li class="flex items-center gap-3"><i data-lucide="heart" class="w-4 h-4 text-brand-gold"></i> Di proprietà di donne</li>
-                            <li class="flex items-center gap-3"><i data-lucide="package" class="w-4 h-4 text-brand-gold"></i> Asporto disponibile</li>
-                            <li class="flex items-center gap-3"><i data-lucide="utensils" class="w-4 h-4 text-brand-gold"></i> Consumazione sul posto</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- In Evidenza -->
-                <div class="toggle-container border border-gray-100 rounded-xl bg-brand-surface transition-all">
-                    <button class="toggle-btn w-full p-5 flex items-center justify-between hover:bg-brand-gold/5">
-                        <div class="flex items-center gap-4">
-                            <i data-lucide="award" class="w-5 h-5 text-brand-gold"></i>
-                            <span class="font-medium">In Evidenza & Ambiente</span>
-                        </div>
-                        <i data-lucide="chevron-down" class="toggle-icon w-5 h-5 transition-transform text-gray-400"></i>
-                    </button>
-                    <div class="toggle-content">
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 p-2 text-sm">
-                            <li class="flex items-center gap-3"><i data-lucide="wine" class="w-4 h-4 text-brand-gold"></i> Ottima carta dei vini</li>
-                            <li class="flex items-center gap-3"><i data-lucide="star" class="w-4 h-4 text-brand-gold"></i> Ottimi dessert & caffè</li>
-                            <li class="flex items-center gap-3"><i data-lucide="smile" class="w-4 h-4 text-brand-gold"></i> Ambiente intimo & romantico</li>
-                            <li class="flex items-center gap-3"><i data-lucide="wifi" class="w-4 h-4 text-brand-gold"></i> Wi-Fi gratuito</li>
-                        </ul>
-                    </div>
-                </div>
+            <ul class="space-y-3">
+              <li class="flex justify-between text-sm">
+                <span class="text-gray-500">Lun - Mer, Gio - Ven</span>
+                <span class="font-semibold">12:00 – 14:30</span>
+              </li>
+              <li class="flex justify-between text-sm">
+                <span class="text-gray-500">Sabato - Domenica</span>
+                <span class="text-brand-gold font-bold">12:00 – 15:00</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Cena -->
+          <div
+            class="bg-brand-surface p-8 rounded-2xl border border-brand-gold/10 shadow-lg"
+          >
+            <div
+              class="flex items-center gap-3 mb-6 pb-4 border-b border-brand-gold/10"
+            >
+              <i data-lucide="moon" class="w-6 h-6 text-brand-gold"></i>
+              <h3
+                class="text-brand-dark font-bold uppercase text-sm tracking-widest"
+              >
+                Cena
+              </h3>
             </div>
-        </section>
+            <ul class="space-y-3 text-sm">
+              <li class="flex justify-between">
+                <span class="text-gray-500">Lun - Mer, Gio, Dom</span>
+                <span class="font-semibold">19:00 – 22:30</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="text-gray-500">Venerdì - Sabato</span>
+                <span class="text-brand-gold font-bold">19:00 – 23:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- Menù Section -->
-        <section class="py-16">
-            <h2 class="text-2xl font-bold text-brand-dark mb-8 uppercase tracking-[0.2em] text-center">Menù della Trattoria</h2>
-            <div class="space-y-4">
-                <!-- Primi -->
-                <div class="toggle-container border border-gray-100 rounded-xl bg-brand-surface overflow-hidden">
-                    <button class="toggle-btn w-full p-6 flex items-center justify-between hover:bg-brand-gold/5">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-10 flex items-center justify-center bg-brand-gold/10 rounded-full text-brand-gold font-bold">1</span>
-                            <span class="font-bold text-lg">Primi Piatti</span>
-                        </div>
-                        <i data-lucide="chevron-down" class="toggle-icon w-5 h-5"></i>
-                    </button>
-                    <div class="toggle-content">
-                        <div class="space-y-6 p-4">
-                            <div class="flex justify-between items-baseline border-b border-gray-50 pb-2">
-                                <div><h4 class="font-bold">Bigoli all'Anatra</h4><p class="text-xs text-gray-400 italic">Pasta tipica veronese con ragù d'anatra</p></div>
-                                <span class="text-brand-gold font-bold ml-4">€ 12.00</span>
-                            </div>
-                            <div class="flex justify-between items-baseline border-b border-gray-50 pb-2">
-                                <div><h4 class="font-bold">Risotto all'Amarone</h4><p class="text-xs text-gray-400 italic">Cucinato con il celebre vino della Valpolicella</p></div>
-                                <span class="text-brand-gold font-bold ml-4">€ 14.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Caratteristiche Section (Toggle) -->
+      <section class="py-16">
+        <h2
+          class="text-2xl font-bold text-brand-dark mb-8 uppercase tracking-[0.2em]"
+        >
+          Caratteristiche
+        </h2>
 
-                <!-- Secondi -->
-                <div class="toggle-container border border-gray-100 rounded-xl bg-brand-surface overflow-hidden">
-                    <button class="toggle-btn w-full p-6 flex items-center justify-between hover:bg-brand-gold/5">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-10 flex items-center justify-center bg-brand-gold/10 rounded-full text-brand-gold font-bold">2</span>
-                            <span class="font-bold text-lg">Secondi Piatti</span>
-                        </div>
-                        <i data-lucide="chevron-down" class="toggle-icon w-5 h-5"></i>
-                    </button>
-                    <div class="toggle-content">
-                        <div class="space-y-6 p-4">
-                            <div class="flex justify-between items-baseline border-b border-gray-50 pb-2">
-                                <div><h4 class="font-bold">Brasato di Manzo</h4><p class="text-xs text-gray-400 italic">Lenta cottura con erbe e vino rosso</p></div>
-                                <span class="text-brand-gold font-bold ml-4">€ 16.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dessert & Bevande -->
-                <div class="toggle-container border border-gray-100 rounded-xl bg-brand-surface overflow-hidden">
-                    <button class="toggle-btn w-full p-6 flex items-center justify-between hover:bg-brand-gold/5">
-                        <div class="flex items-center gap-4">
-                            <i data-lucide="coffee" class="w-5 h-5 text-brand-gold"></i>
-                            <span class="font-bold text-lg">Bevande & Dessert</span>
-                        </div>
-                        <i data-lucide="chevron-down" class="toggle-icon w-5 h-5"></i>
-                    </button>
-                    <div class="toggle-content">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
-                            <div>
-                                <h5 class="text-xs font-bold text-brand-gold uppercase mb-4 tracking-widest">Dessert</h5>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between text-sm"><span>Tiramisù Veronese</span><span class="font-bold">€ 6.00</span></div>
-                                    <div class="flex justify-between text-sm"><span>Sbrisolona con Grappa</span><span class="font-bold">€ 7.00</span></div>
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="text-xs font-bold text-brand-gold uppercase mb-4 tracking-widest">Bevande</h5>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between text-sm"><span>Vino della Casa (L)</span><span class="font-bold">€ 10.00</span></div>
-                                    <div class="flex justify-between text-sm"><span>Caffè Espresso</span><span class="font-bold">€ 1.50</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="space-y-4">
+          <!-- Accessibilità -->
+          <div
+            class="toggle-container border border-gray-100 rounded-xl bg-brand-surface transition-all"
+          >
+            <button
+              class="toggle-btn w-full p-5 flex items-center justify-between hover:bg-brand-gold/5"
+            >
+              <div class="flex items-center gap-4">
+                <i
+                  data-lucide="accessibility"
+                  class="w-5 h-5 text-brand-gold"
+                ></i>
+                <span class="font-medium">Accessibilità</span>
+              </div>
+              <i
+                data-lucide="chevron-down"
+                class="toggle-icon w-5 h-5 transition-transform text-gray-400"
+              ></i>
+            </button>
+            <div class="toggle-content">
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 p-2 text-sm">
+                <li class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-gold"></i>
+                  Ingresso accessibile in sedia a rotelle
+                </li>
+                <li class="flex items-center gap-3">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-gold"></i>
+                  Tavoli accessibili in sedia a rotelle
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
 
-        <!-- Per Conoscerci Section -->
-        <section class="py-16">
-            <h2 class="text-2xl font-bold text-brand-dark mb-10 uppercase tracking-[0.2em] text-center">Per Conoscerci</h2>
-            <div class="bg-brand-surface p-10 rounded-3xl border border-brand-gold/10 shadow-2xl">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="space-y-10">
-                        <div class="flex items-start gap-6">
-                            <div class="p-4 bg-brand-gold/10 rounded-2xl"><i data-lucide="phone" class="w-6 h-6 text-brand-gold"></i></div>
-                            <div>
-                                <h4 class="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-1">Chiamaci</h4>
-                                <p class="text-brand-dark text-2xl font-serif">045 876 9827</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6">
-                            <div class="p-4 bg-brand-gold/10 rounded-2xl"><i data-lucide="map-pin" class="w-6 h-6 text-brand-gold"></i></div>
-                            <div>
-                                <h4 class="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-1">Visitaci</h4>
-                                <p class="text-brand-dark text-lg font-medium leading-tight">Via Santa Maria in Chiavica, 5<br>37121 Verona VR</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col justify-center items-center text-center p-8 bg-brand-gold/5 rounded-2xl border border-brand-gold/10">
-                        <i data-lucide="calendar-check" class="w-8 h-8 text-brand-gold mb-4"></i>
-                        <p class="text-brand-dark italic font-serif text-sm mb-6 leading-relaxed">
-                            "Prenotazione consigliata sia per pranzo che per cena. Vi aspettiamo per farvi scoprire i sapori autentici di Verona."
-                        </p>
-                        <div class="flex gap-4">
-                            <div class="p-2 border border-brand-gold/20 rounded-md"><i data-lucide="credit-card" class="w-4 h-4 text-brand-gold"></i></div>
-                            <div class="p-2 border border-brand-gold/20 rounded-md"><i data-lucide="smartphone-nfc" class="w-4 h-4 text-brand-gold"></i></div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Servizio -->
+          <div
+            class="toggle-container border border-gray-100 rounded-xl bg-brand-surface transition-all"
+          >
+            <button
+              class="toggle-btn w-full p-5 flex items-center justify-between hover:bg-brand-gold/5"
+            >
+              <div class="flex items-center gap-4">
+                <i data-lucide="clover" class="w-5 h-5 text-brand-gold"></i>
+                <span class="font-medium">Dall'attività</span>
+              </div>
+              <i
+                data-lucide="chevron-down"
+                class="toggle-icon w-5 h-5 transition-transform text-gray-400"
+              ></i>
+            </button>
+            <div class="toggle-content">
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 p-2 text-sm">
+                <li class="flex items-center gap-3">
+                  <i data-lucide="heart" class="w-4 h-4 text-brand-gold"></i> Di
+                  proprietà di donne
+                </li>
+                <li class="flex items-center gap-3">
+                  <i data-lucide="package" class="w-4 h-4 text-brand-gold"></i>
+                  Asporto disponibile
+                </li>
+                <li class="flex items-center gap-3">
+                  <i data-lucide="utensils" class="w-4 h-4 text-brand-gold"></i>
+                  Consumazione sul posto
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
 
-        <!-- Footer -->
-        <footer class="mt-20 text-center">
-            <div class="w-12 h-px bg-brand-gold/30 mx-auto mb-8"></div>
-            <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em]">© 2026 Il Vicoletto • Trattoria di Verona</p>
-            <p class="mt-4 text-[9px] text-gray-300">Built with <a href="https://playcode.io/ai-website-builder" class="hover:text-brand-gold underline transition-colors">Playcode</a></p>
-        </footer>
+          <!-- In Evidenza -->
+          <div
+            class="toggle-container border border-gray-100 rounded-xl bg-brand-surface transition-all"
+          >
+            <button
+              class="toggle-btn w-full p-5 flex items-center justify-between hover:bg-brand-gold/5"
+            >
+              <div class="flex items-center gap-4">
+                <i data-lucide="award" class="w-5 h-5 text-brand-gold"></i>
+                <span class="font-medium">In Evidenza & Ambiente</span>
+              </div>
+              <i
+                data-lucide="chevron-down"
+                class="toggle-icon w-5 h-5 transition-transform text-gray-400"
+              ></i>
+            </button>
+            <div class="toggle-content">
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 p-2 text-sm">
+                <li class="flex items-center gap-3">
+                  <i data-lucide="wine" class="w-4 h-4 text-brand-gold"></i>
+                  Ottima carta dei vini
+                </li>
+                <li class="flex items-center gap-3">
+                  <i data-lucide="star" class="w-4 h-4 text-brand-gold"></i>
+                  Ottimi dessert & caffè
+                </li>
+                <li class="flex items-center gap-3">
+                  <i data-lucide="smile" class="w-4 h-4 text-brand-gold"></i>
+                  Ambiente intimo & romantico
+                </li>
+                <li class="flex items-center gap-3">
+                  <i data-lucide="wifi" class="w-4 h-4 text-brand-gold"></i>
+                  Wi-Fi gratuito
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menù Section -->
+      <section class="py-16">
+        <h2
+          class="text-2xl font-bold text-brand-dark mb-8 uppercase tracking-[0.2em] text-center"
+        >
+          Menù della Trattoria
+        </h2>
+        <div class="space-y-4">
+          <!-- Primi -->
+          <div
+            class="toggle-container border border-gray-100 rounded-xl bg-brand-surface overflow-hidden"
+          >
+            <button
+              class="toggle-btn w-full p-6 flex items-center justify-between hover:bg-brand-gold/5"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="w-10 h-10 flex items-center justify-center bg-brand-gold/10 rounded-full text-brand-gold font-bold"
+                  >1</span
+                >
+                <span class="font-bold text-lg">Primi Piatti</span>
+              </div>
+              <i data-lucide="chevron-down" class="toggle-icon w-5 h-5"></i>
+            </button>
+            <div class="toggle-content">
+              <div class="space-y-6 p-4">
+                <div
+                  class="flex justify-between items-baseline border-b border-gray-50 pb-2"
+                >
+                  <div>
+                    <h4 class="font-bold">Bigoli all'Anatra</h4>
+                    <p class="text-xs text-gray-400 italic">
+                      Pasta tipica veronese con ragù d'anatra
+                    </p>
+                  </div>
+                  <span class="text-brand-gold font-bold ml-4">€ 12.00</span>
+                </div>
+                <div
+                  class="flex justify-between items-baseline border-b border-gray-50 pb-2"
+                >
+                  <div>
+                    <h4 class="font-bold">Risotto all'Amarone</h4>
+                    <p class="text-xs text-gray-400 italic">
+                      Cucinato con il celebre vino della Valpolicella
+                    </p>
+                  </div>
+                  <span class="text-brand-gold font-bold ml-4">€ 14.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondi -->
+          <div
+            class="toggle-container border border-gray-100 rounded-xl bg-brand-surface overflow-hidden"
+          >
+            <button
+              class="toggle-btn w-full p-6 flex items-center justify-between hover:bg-brand-gold/5"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="w-10 h-10 flex items-center justify-center bg-brand-gold/10 rounded-full text-brand-gold font-bold"
+                  >2</span
+                >
+                <span class="font-bold text-lg">Secondi Piatti</span>
+              </div>
+              <i data-lucide="chevron-down" class="toggle-icon w-5 h-5"></i>
+            </button>
+            <div class="toggle-content">
+              <div class="space-y-6 p-4">
+                <div
+                  class="flex justify-between items-baseline border-b border-gray-50 pb-2"
+                >
+                  <div>
+                    <h4 class="font-bold">Brasato di Manzo</h4>
+                    <p class="text-xs text-gray-400 italic">
+                      Lenta cottura con erbe e vino rosso
+                    </p>
+                  </div>
+                  <span class="text-brand-gold font-bold ml-4">€ 16.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dessert & Bevande -->
+          <div
+            class="toggle-container border border-gray-100 rounded-xl bg-brand-surface overflow-hidden"
+          >
+            <button
+              class="toggle-btn w-full p-6 flex items-center justify-between hover:bg-brand-gold/5"
+            >
+              <div class="flex items-center gap-4">
+                <i data-lucide="coffee" class="w-5 h-5 text-brand-gold"></i>
+                <span class="font-bold text-lg">Bevande & Dessert</span>
+              </div>
+              <i data-lucide="chevron-down" class="toggle-icon w-5 h-5"></i>
+            </button>
+            <div class="toggle-content">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
+                <div>
+                  <h5
+                    class="text-xs font-bold text-brand-gold uppercase mb-4 tracking-widest"
+                  >
+                    Dessert
+                  </h5>
+                  <div class="space-y-3">
+                    <div class="flex justify-between text-sm">
+                      <span>Tiramisù Veronese</span
+                      ><span class="font-bold">€ 6.00</span>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                      <span>Sbrisolona con Grappa</span
+                      ><span class="font-bold">€ 7.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5
+                    class="text-xs font-bold text-brand-gold uppercase mb-4 tracking-widest"
+                  >
+                    Bevande
+                  </h5>
+                  <div class="space-y-3">
+                    <div class="flex justify-between text-sm">
+                      <span>Vino della Casa (L)</span
+                      ><span class="font-bold">€ 10.00</span>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                      <span>Caffè Espresso</span
+                      ><span class="font-bold">€ 1.50</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Per Conoscerci Section -->
+      <section class="py-16">
+        <h2
+          class="text-2xl font-bold text-brand-dark mb-10 uppercase tracking-[0.2em] text-center"
+        >
+          Per Conoscerci
+        </h2>
+        <div
+          class="bg-brand-surface p-10 rounded-3xl border border-brand-gold/10 shadow-2xl"
+        >
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-10">
+              <div class="flex items-start gap-6">
+                <div class="p-4 bg-brand-gold/10 rounded-2xl">
+                  <i data-lucide="phone" class="w-6 h-6 text-brand-gold"></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-1"
+                  >
+                    Chiamaci
+                  </h4>
+                  <p class="text-brand-dark text-2xl font-serif">
+                    045 876 9827
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-6">
+                <div class="p-4 bg-brand-gold/10 rounded-2xl">
+                  <i data-lucide="map-pin" class="w-6 h-6 text-brand-gold"></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-1"
+                  >
+                    Visitaci
+                  </h4>
+                  <p class="text-brand-dark text-lg font-medium leading-tight">
+                    Via Santa Maria in Chiavica, 5<br />37121 Verona VR
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-center items-center text-center p-8 bg-brand-gold/5 rounded-2xl border border-brand-gold/10"
+            >
+              <i
+                data-lucide="calendar-check"
+                class="w-8 h-8 text-brand-gold mb-4"
+              ></i>
+              <p
+                class="text-brand-dark italic font-serif text-sm mb-6 leading-relaxed"
+              >
+                "Prenotazione consigliata sia per pranzo che per cena. Vi
+                aspettiamo per farvi scoprire i sapori autentici di Verona."
+              </p>
+              <div class="flex gap-4">
+                <div class="p-2 border border-brand-gold/20 rounded-md">
+                  <i
+                    data-lucide="credit-card"
+                    class="w-4 h-4 text-brand-gold"
+                  ></i>
+                </div>
+                <div class="p-2 border border-brand-gold/20 rounded-md">
+                  <i
+                    data-lucide="smartphone-nfc"
+                    class="w-4 h-4 text-brand-gold"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-20 text-center">
+        <div class="w-12 h-px bg-brand-gold/30 mx-auto mb-8"></div>
+        <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em]">
+          © 2026 Il Vicoletto • Trattoria di Verona
+        </p>
+        <p class="mt-4 text-[9px] text-gray-300">
+          Built with
+          <a
+            href="https://playcode.io/ai-website-builder"
+            class="hover:text-brand-gold underline transition-colors"
+            >Playcode</a
+          >
+        </p>
+      </footer>
     </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+             gold:' #d4af37',
+             light: '#fdfcf8',
+             surface: '#ffffff',
+             dark: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
 
     <script>
-        // Inizializza le icone
-        lucide.createIcons();
+      // Inizializza le icone
+      lucide.createIcons();
 
-        // Logica Toggle (Accordion) con JS nativo
-        document.querySelectorAll('.toggle-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const container = button.closest('.toggle-container');
-                
-                // Opzionale: chiudi gli altri quando ne apri uno
-                // document.querySelectorAll('.toggle-container').forEach(c => {
-                //     if(c !== container) c.classList.remove('active');
-                // });
+      // Logica Toggle (Accordion) con JS nativo
+      document.querySelectorAll('.toggle-btn').forEach(button => {
+          button.addEventListener('click', () => {
+              const container = button.closest('.toggle-container');
 
-                container.classList.toggle('active');
-            });
-        });
+              // Opzionale: chiudi gli altri quando ne apri uno
+              // document.querySelectorAll('.toggle-container').forEach(c => {
+              //     if(c !== container) c.classList.remove('active');
+              // });
+
+              container.classList.toggle('active');
+          });
+      });
     </script>
-</body>
+  </body>
 </html>
